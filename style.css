@@ -1,3 +1,75 @@
-/* body {
-    background-color: black;
-} */
+/*
+*style audio tag
+*/
+
+.mejs-container {
+    background: aliceblue;
+    width: 300px;
+    height: 50px;
+}
+
+span {
+    display: none;
+}
+
+#mep_0 {
+    display: none;
+}
+
+.mejs-container .mejs-controls div {
+    height: 100%;
+    width: 50px;
+    position: relative;
+}
+
+.mejs-controls .mejs-button button {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 0 !important;
+    background: transparent;
+    outline: none;
+}
+
+.mejs-controls .mejs-play:after {
+    position: absolute;
+    content: "play";
+    /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/play.svg) no-repeat; */
+    width: 17px;
+    height: 22px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    /* transition: all 100ms linear;
+    pointer-events: none; */
+    color: blue
+}
+
+.mejs-controls .mejs-pause:after {
+    position: absolute;
+    content: "pause";
+    /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/pause.svg) no-repeat; */
+    width: 13px;
+    height: 22px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: all 100ms linear;
+    pointer-events: none;
+    color: red;
+}
+
+@-webkit-keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}

@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js"></script>
+
     <link rel="icon" href="" type="image/gif">
     <title>flowsessions with syd and elliot</title>
     <link rel="stylesheet" href="style.css">
@@ -11,14 +14,26 @@
 
 <body>
 
-    <div id="widget">
-
-        <div id="iframe">
-            <!-- <iframe src="https://zeno.fm/player/sydneyandelliotradio" width="300" height="100" frameborder="0" scrolling="no"></iframe> -->
-            <iframe src="http://stream.zeno.fm/cz4m6dmvqg0uv" width="300" height="100" frameborder="0" scrolling="no"></iframe>
-        </div>
-
+    <div>
+        <h1>flow sessions with jason silva with sydney and elliot</h1>
     </div>
+
+
+
+
+    <audio controls src="http://stream.zeno.fm/cz4m6dmvqg0uv">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+
+    <audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="http://stream.zeno.fm/cz4m6dmvqg0uv">
+    </audio>
+    <script>
+        $('audio').mediaelementplayer({
+            features: ['playpause']
+        });
+    </script>
 </body>
 
 </html>
