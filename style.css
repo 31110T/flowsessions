@@ -1,11 +1,55 @@
+body {
+    margin: 20px;
+    background-color: hsl(205, 51%, 66%);
+}
+
+h1 {
+    font-family: 'Xanh Mono', cursive, serif, 'helvetica', 'snell roundhand';
+    font-weight: 100;
+    font-style: italic;
+    font-size: 25px;
+    text-transform: capitalize;
+    width: 400px;
+    color: hsl(205, 51%, 66%);
+}
+
+.box {
+    background-color: #e86063;
+    box-shadow: 0px 0px 35px 35px #e86063;
+    margin: 15px;
+}
+
+#title {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 375px;
+}
+
+#player {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    border-radius: 50% !important;
+    font-size: 20px !important;
+}
+
+
 /*
 *style audio tag
 */
 
+#mep_1 {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+}
+
 .mejs-container {
-    background: aliceblue;
-    width: 300px;
-    height: 50px;
+    background-color: #e86063;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
 }
 
 span {
@@ -17,9 +61,9 @@ span {
 }
 
 .mejs-container .mejs-controls div {
+    /* play button */
     height: 100%;
-    width: 50px;
-    position: relative;
+    width: 10px;
 }
 
 .mejs-controls .mejs-button button {
@@ -35,8 +79,7 @@ span {
 
 .mejs-controls .mejs-play:after {
     position: absolute;
-    content: "play";
-    /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/play.svg) no-repeat; */
+    content: "▷";
     width: 17px;
     height: 22px;
     top: 0;
@@ -44,32 +87,18 @@ span {
     bottom: 0;
     right: 0;
     margin: auto;
-    /* transition: all 100ms linear;
-    pointer-events: none; */
-    color: blue
+    color: hsl(205, 51%, 66%);
 }
 
 .mejs-controls .mejs-pause:after {
     position: absolute;
-    content: "pause";
-    /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/163884/pause.svg) no-repeat; */
-    width: 13px;
+    content: "▢";
+    width: 17px;
     height: 22px;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     margin: auto;
-    transition: all 100ms linear;
-    pointer-events: none;
-    color: red;
-}
-
-@-webkit-keyframes move {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 50px 50px;
-    }
+    color: hsl(205, 51%, 66%);
 }
