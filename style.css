@@ -8,7 +8,7 @@ h1 {
     font-weight: 100;
     font-style: italic;
     font-size: 25px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     width: 400px;
     color: hsl(205, 51%, 66%);
 }
