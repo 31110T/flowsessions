@@ -1,6 +1,7 @@
 body {
     margin: 20px;
     background-color: hsl(205, 51%, 66%);
+    line-height: .97;
 }
 
 h1 {
@@ -11,6 +12,12 @@ h1 {
     /* text-transform: capitalize; */
     width: 400px;
     color: hsl(205, 51%, 66%);
+}
+
+a {
+    color: #e86063;
+    font-family: 'Xanh Mono', serif;
+    font-style: italic;
 }
 
 .box {
@@ -32,6 +39,16 @@ h1 {
     left: 50px;
     border-radius: 50% !important;
     font-size: 20px !important;
+}
+
+#disclaimer {
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    width: 320px;
+    font-family: 'helvetica', 'snell roundhand';
+    color: #e86063;
+    text-align: justify;
 }
 
 
