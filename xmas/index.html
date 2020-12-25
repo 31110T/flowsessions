@@ -6,33 +6,31 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
     <link rel="icon" href="stein.png" type="image/gif">
     <title>flowsessions with syd and elliot</title>
 
 </head>
 
 <body>
-
-    <div id="title" class="box">
+    <img src="wiggle.gif" id="bgimage">
+    <!-- <div id="title" class="box">
         <h1>flow sessions with jason silva <br> with sydney and elliot</h1>
-    </div>
+    </div> -->
 
     <div id="player" class="box">
-        <audio controls src="http://stream.zeno.fm/cz4m6dmvqg0uv">
+        <audio controls src="http://stream.zeno.fm/k2vaka8pnm0uv">
             Your browser does not support the
             <code>audio</code> element.
     </audio>
-
         <audio class="audio" controls="controls">
-		<source type="audio/mpeg" src="http://stream.zeno.fm/cz4m6dmvqg0uv">
+		<source type="audio/mpeg" src="http://stream.zeno.fm/k2vaka8pnm0uv">
     </audio>
     </div>
-    <div id="disclaimer">
-        <p>~*~*~*~*~*~*DISCLAIMER~*~*~*~*~*~*~ We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with the podcast
-            <a href='https://podcasts.apple.com/us/podcast/flow-sessions-with-jason-silva/id1485451478'>Flow Sessions with Jason Silva</a> Nor the inimitable man himself...
-        </p>
-    </div>
+
+    <!-- <div id="disclaimer">
+        <p>blah</p>
+    </div> -->
+
     <script>
         $('audio').mediaelementplayer({
             features: ['playpause']

@@ -1,12 +1,12 @@
 body {
     margin: 20px;
-    background-color: hsl(205, 51%, 66%);
+    /* background-color: hsl(205, 51%, 66%); */
     line-height: .97;
+    font-weight: 100;
 }
 
 h1 {
     font-family: 'times new roman', serif, 'helvetica', 'snell roundhand';
-    /* 'Xanh Mono', cursive, */
     font-weight: 100;
     font-style: italic;
     font-size: 30px;
@@ -15,16 +15,19 @@ h1 {
     color: hsl(205, 51%, 66%);
 }
 
-a {
-    color: #e86063;
-    font-family: 'Xanh Mono', serif;
-    font-style: italic;
+.box {
+    /* background-color: #e86063;
+    box-shadow: 0px 0px 35px 35px #e86063; */
+    margin: 15px;
 }
 
-.box {
-    background-color: #e86063;
-    box-shadow: 0px 0px 35px 35px #e86063;
-    margin: 15px;
+#bgimage {
+    filter: invert(100%);
+    position: fixed;
+    left: 0px;
+    top: -300px;
+    width: 140vw;
+    height: 200vh;
 }
 
 #title {
@@ -36,20 +39,10 @@ a {
 
 #player {
     position: absolute;
-    top: 250px;
+    top: 50px;
     left: 50px;
     border-radius: 50% !important;
-    font-size: 20px !important;
-}
-
-#disclaimer {
-    position: fixed;
-    right: 50px;
-    bottom: 30px;
-    width: 300px;
-    font-family: 'helvetica', 'snell roundhand';
-    color: #e86063;
-    text-align: justify;
+    font-size: 9.5em !important;
 }
 
 
@@ -64,7 +57,7 @@ a {
 }
 
 .mejs-container {
-    background-color: #e86063;
+    /* background-color: #e86063; */
     width: 30px !important;
     height: 30px !important;
     border-radius: 50% !important;
@@ -105,7 +98,7 @@ span {
     bottom: 0;
     right: 0;
     margin: auto;
-    color: hsl(205, 51%, 66%);
+    color: white;
 }
 
 .mejs-controls .mejs-pause:after {
@@ -118,5 +111,5 @@ span {
     bottom: 0;
     right: 0;
     margin: auto;
-    color: hsl(205, 51%, 66%);
+    color: white;
 }
